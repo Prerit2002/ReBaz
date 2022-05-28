@@ -1,7 +1,15 @@
-import React from 'react';
-import Image from "../../assets/image.svg";
+import Visually from "../../assets/Visually.svg";
+import Hearing from "../../assets/Hearing.svg";
+import WheelChair from "../../assets/WheelChair.svg";
+import Autism from "../../assets/Autism.svg";
+import Deaf from "../../assets/Deaf.svg";
+import Disabled from "../../assets/Disabled.svg";
+import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 export const Category = () => {
+
     // const [data, setData] = useState({
     //     getData: []
     // })
@@ -21,77 +29,65 @@ export const Category = () => {
 
     return (
         <>
-            <div className="text-left">
-                <h2 className='text-6xl font-bold text-indigo-700 ml-8 mt-20 mb-10'>Category</h2>
+            <div className="text-left ml-5">
+                <h2 className='text-6xl font-bold text-blue-700 mt-20'>Category</h2>
             </div>
-            <div className='grid lg:grid-cols-3 gap-4 ml-3 mr-3'>
-                <div class="flex flex-wrap rounded-2xl border-gray-400 border-2 bg-gray-400">
-                    <div className='flex-none w-44 h-32 mt-5 ml-5'>
-                        <img src={Image} alt='img' className='float-center' />
-                    </div>
-                    <div className='flex-initial'>
-                        <div class="font-bold text-2xl text-indigo-700 mt-10 ml-2">Visually Impaired</div>
-                        <p class="text-xl text-indigo-700 ml-2">
-                            19688 Products
+            <div className='grid lg:grid-cols-3 gap-4 lg:ml-6'>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                    <div class="px-6 py-4">
+                        <img src={Visually} alt='img' className='float-center ml-28' />
+                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Grocery</div>
+                        <p class="text-gray-700 text-base text-center font-semibold">
+                            2345 Products Available
                         </p>
                     </div>
                 </div>
-                <div class="flex flex-wrap rounded-2xl border-gray-400 border-2 bg-gray-400">
-                    <div className='flex-none w-44 h-32 mt-5 ml-5'>
-                        <img src={Image} alt='img' className='float-center' />
-                    </div>
-                    <div className='flex-initial'>
-                        <div class="font-bold text-2xl text-indigo-700 mt-10 ml-2">Visually Impaired</div>
-                        <p class="text-xl text-indigo-700 ml-2">
-                            19688 Products
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                    <div class="px-6 py-4">
+                        <img src={Hearing} alt='img' className='float-center ml-28' />
+                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Electronics</div>
+                        <p class="text-gray-700 text-base text-center font-semibold">
+                            2345 Products Available
                         </p>
                     </div>
                 </div>
-                <div class="flex flex-wrap rounded-2xl border-gray-400 border-2 bg-gray-400">
-                    <div className='flex-none w-44 h-32 mt-5 ml-5'>
-                        <img src={Image} alt='img' className='float-center' />
-                    </div>
-                    <div className='flex-initial'>
-                        <div class="font-bold text-2xl text-indigo-700 mt-10 ml-2">Visually Impaired</div>
-                        <p class="text-xl text-indigo-700 ml-2">
-                            19688 Products
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                    <div class="px-6 py-4">
+                        <img src={WheelChair} alt='img' className='float-center ml-28' />
+                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Medicines</div>
+                        <p class="text-gray-700 text-base text-center font-semibold">
+                            2345 Products Available
                         </p>
                     </div>
                 </div>
-                <div class="flex flex-wrap rounded-2xl border-gray-400 border-2 bg-gray-400">
-                    <div className='flex-none w-44 h-32 mt-5 ml-5'>
-                        <img src={Image} alt='img' className='float-center' />
-                    </div>
-                    <div className='flex-initial'>
-                        <div class="font-bold text-2xl text-indigo-700 mt-10 ml-2">Visually Impaired</div>
-                        <p class="text-xl text-indigo-700 ml-2">
-                            19688 Products
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                    <div class="px-6 py-4">
+                        <img src={Autism} alt='img' className='float-center ml-28' />
+                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Stationary</div>
+                        <p class="text-gray-700 text-base text-center font-semibold">
+                            2345 Products Available
                         </p>
                     </div>
                 </div>
-                <div class="flex flex-wrap rounded-2xl border-gray-400 border-2 bg-gray-400">
-                    <div className='flex-none w-44 h-32 mt-5 ml-5'>
-                        <img src={Image} alt='img' className='float-center' />
-                    </div>
-                    <div className='flex-initial'>
-                        <div class="font-bold text-2xl text-indigo-700 mt-10 ml-2">Visually Impaired</div>
-                        <p class="text-xl text-indigo-700 ml-2">
-                            19688 Products
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                    <div class="px-6 py-4">
+                        <img src={Deaf} alt='img' className='float-center ml-28' />
+                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Gift and Toys</div>
+                        <p class="text-gray-700 text-base text-center font-semibold">
+                            2345 Products Available
                         </p>
                     </div>
                 </div>
-                <div class="flex flex-wrap rounded-2xl border-gray-400 border-2 bg-gray-400">
-                    <div className='flex-none w-44 h-32 mt-5 ml-5'>
-                        <img src={Image} alt='img' className='float-center' />
-                    </div>
-                    <div className='flex-initial'>
-                        <div class="font-bold text-2xl text-indigo-700 mt-10 ml-2">Visually Impaired</div>
-                        <p class="text-xl text-indigo-700 ml-2">
-                            19688 Products
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                    <div class="px-6 py-4">
+                        <img src={Disabled} alt='img' className='float-center ml-28' />
+                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Local Artifacts</div>
+                        <p class="text-gray-700 text-base text-center font-semibold">
+                            2345 Products Available
                         </p>
                     </div>
                 </div>
             </div>
         </>
-    )
-}
+    );
+};
