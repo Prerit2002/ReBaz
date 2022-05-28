@@ -21,7 +21,7 @@ function App() {
     alert("hi")
     state.auctionContract.methods.pay(address).send({ from: state.account, value  }).on('receipt' , (receipt) => {
       console.log(receipt)
-    }).on('error' , (error) => {
+    }).on('error', (error) => {
       console.log(error)
     })
 
