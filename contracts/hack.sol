@@ -13,6 +13,12 @@ contract hack {
         _;
     }
 
+
+    function pay(address payable _buyer ) payable public {
+        _buyer.transfer(msg.value);
+    }
+    
+
     function setCompleted(uint completed) public restricted {
         last_completed_migration = completed;
     }
