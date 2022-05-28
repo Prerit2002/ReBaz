@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import './App.css';
-import Web3 from 'web3'
+import Web3 from 'web3/dist/web3.min.js'
 import contract from './contracts/hack.json'
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
 
   }
 
-  
+
 
 
 
