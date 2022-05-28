@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import './App.css';
-import Web3 from 'web3'
+import Web3 from 'web3/dist/web3.min.js'
 import contract from './contracts/hack.json'
 
 function App() {
@@ -16,16 +16,16 @@ function App() {
     setState(state => ({ ...state, auctionContract }))
   }
 
-  const pay = (address , value) => {
-    state.auctionContract.methods.pay(address).send({ from: state.account, value  }).on('receipt' , (receipt) => {
+  const pay = (address, value) => {
+    state.auctionContract.methods.pay(address).send({ from: state.account, value }).on('receipt', (receipt) => {
       console.log(receipt)
-    }).on('error' , (error) => {
+    }).on('error', (error) => {
       console.log(error)
     })
 
   }
 
-  
+
 
 
 
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      
+
     </div>
   );
 }
