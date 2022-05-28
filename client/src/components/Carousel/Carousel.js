@@ -30,7 +30,7 @@ const Carousel = () => {
                 shouldAutoplay: true,
                 shouldDisplayButtons: true,
                 autoplayDuration: 5000,
-                height: "50vh",
+                height: "100vh",
             }}
         >
             <OverlayContainer>

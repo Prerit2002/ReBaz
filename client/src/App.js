@@ -12,9 +12,10 @@ import { Category } from './components/Category/Category';
 import { OtherProduct } from './components/OtherProduct/OtherProduct';
 import { Footer } from './components/Footer/Footer';
 import Navbar from './components/navbar';
+import { JobsThird } from './pages/Jobs/JobsThird';
+import { Product } from './pages/Product/Product';
 import Cart from "./components/Cart";
 import Carousel from './components/Carousel/Carousel';
-import { Product } from './components/Product/Product';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -69,7 +70,9 @@ function App() {
 
           <Route exact path="/dashboard" element={<Dashboard />} />
 
-          {/* <Route exact path="/" element={<Trendings />} /> */}
+          <Route exact path="/Jobs" element={<Job />} />
+
+          <Route exact path="/Product" element={<Produc />} />
 
         </Routes>
 
@@ -91,6 +94,26 @@ function App() {
       </>
     );
   }
+
+  function Job() {
+    return (
+      <>
+        <JobsThird />
+        <Footer />
+      </>
+    )
+  }
+
+  function Produc() {
+    return (
+      <>
+        <Product />
+        <Footer />
+      </>
+    )
+  }
+
+
 }
 
 export default App;
