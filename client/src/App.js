@@ -1,7 +1,13 @@
-import { useEffect, useState } from "react"
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Web3 from 'web3/dist/web3.min.js'
 import contract from './contracts/hack.json'
+import { LoginSignup } from './components/LoginSignup/LoginSignup';
+import { SignupLogin } from './components/LoginSignup/SignupLogin';
+import { Trendings } from './components/Trending/Trendings';
+import { Category } from './components/Category/Category';
+import  Carousel  from './components/Carousel/Carousel';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   const [state, setState] = useState({ account: "" })
@@ -35,6 +41,24 @@ function App() {
 
   return (
     <div className="App">
+
+      <Router>
+
+        <Routes>
+
+        <Route exact path="/" element={<Carousel />} />
+
+          {/* <Route exact path="/" element={<Category />} />
+
+          <Route exact path="/" element={<LoginSignup />} />
+
+          <Route exact path="/signuplogin" element={<SignupLogin />} />
+
+          <Route exact path="/" element={<Trendings />} /> */}
+
+        </Routes>
+
+      </Router>
 
     </div>
   );
