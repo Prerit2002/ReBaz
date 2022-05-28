@@ -56,9 +56,7 @@ function App() {
 
         <Routes>
 
-          {/* <Route exact path="/" element={<Cart />} />
-
-          <Route exact path="/" element={<Product />} />*/}
+          <Route exact path="/cart" element={<Carts />} />
 
           <Route exact path="/" element={<LoginSignup />} />
 
@@ -108,6 +106,15 @@ function App() {
     return (
       <>
         <Product />
+        <Footer />
+      </>
+    )
+  }
+
+  function Carts() {
+    return (
+      <>
+        <Cart />
         <Footer />
       </>
     )

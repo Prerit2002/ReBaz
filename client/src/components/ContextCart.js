@@ -10,7 +10,7 @@ const ContextCart = () => {
     return (
       <>
         <section className="main-cart-section">
-          <h1>shopping Cart</h1>
+          <h1>Shopping Cart</h1>
           <p className="total-items">
             you have <span className="total-items-count">{totalItem} </span>{" "}
             items in shopping cart
