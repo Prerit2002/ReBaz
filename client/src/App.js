@@ -11,7 +11,9 @@ import { Trendings } from './components/Trending/Trendings';
 import { Category } from './components/Category/Category';
 import { OtherProduct } from './components/OtherProduct/OtherProduct';
 import { Footer } from './components/Footer/Footer';
-import Navbar from './components/navbar';
+import { Navbar } from './components/Navbar/Navbar';
+import { Dropdown } from './components/Navbar/Dropdown';
+import { ProfileDropdown } from './components/Navbar/ProfileDropdown';
 import { JobsThird } from './pages/Jobs/JobsThird';
 import { Product } from './pages/Product/Product';
 import Cart from "./components/Cart";
@@ -58,13 +60,15 @@ function App() {
 
           <Route exact path="/cart" element={<Carts />} />
 
-          <Route exact path="/" element={<LoginSignup />} />
+          <Route exact path="/loginsignup" element={<LoginSignup />} />
 
           <Route exact path="/signuplogin" element={<SignupLogin />} />
 
-          {/* <Route exact path="/" element={<SLoginSignup />} />
+          <Route exact path="/sloginsignup" element={<SLoginSignup />} />
 
-          <Route exact path="/signuplogin" element={<SSignupLogin />} /> */}
+          <Route exact path="/ssignuplogin" element={<SSignupLogin />} />
+
+          <Route exact path="/" element={<Dashboard />} />
 
           <Route exact path="/dashboard" element={<Dashboard />} />
 
@@ -80,9 +84,37 @@ function App() {
   );
 
   function Dashboard() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+      setIsOpen(!isOpen);
+    };
+
+    useEffect(() => {
+      const hideMenu = () => {
+        if (window.innerWidth > 768 && isOpen) {
+          setIsOpen(false);
+          // console.log('ABC');
+        }
+      };
+
+      window.addEventListener('resize', hideMenu);
+
+      return () => {
+        window.removeEventListener('resize', hideMenu);
+      };
+    });
+
+    const [isOpens, setIsOpens] = useState(false);
+
+    const toggles = () => {
+      setIsOpens(!isOpens);
+    };
     return (
       <>
-        <Navbar />
+        <Navbar toggle={toggle} toggles={toggles} />
+        <Dropdown isOpen={isOpen} toggle={toggle} />
+        <ProfileDropdown isOpens={isOpens} toggle={toggles} />
         <Carousel />
         <Trendings />
         <Category />
