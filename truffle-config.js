@@ -1,4 +1,5 @@
 const path = require("path");
+const HDWalletProvider = require("@truffle/hdwallet-provider")
 
 module.exports = {
   contracts_build_directory: path.join(__dirname, "client/src/contracts"),
@@ -6,7 +7,16 @@ module.exports = {
     development: {
       host: "127.0.0.1",
       port: 7545,
-      network_id: "*"
+      network_id: "*" // Match any network id
+    },
+    matic: {
+      provider: () => new HDWalletProvider('afraid voyage coyote stumble can air language express shine sign route medal', `https://rpc-mumbai.maticvigil.com/v1/783462f964c047d701690efe64bfc23f9e1f927e`),
+      network_id: 80001,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+      gas: 6000000,
+      gasPrice: 10000000000,
     },
   },
   compilers: {
