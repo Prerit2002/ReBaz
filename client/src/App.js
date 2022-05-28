@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Web3 from 'web3/dist/web3.min.js'
-import contract from './contracts/hack.json'
+import hack from './contracts/hack.json'
 import { LoginSignup } from './components/LoginSignup/LoginSignup';
 import { SignupLogin } from './components/LoginSignup/SignupLogin';
 import { Trendings } from './components/Trending/Trendings';
 import { Category } from './components/Category/Category';
+import Navbar from './components/navbar';
 import  Carousel  from './components/Carousel/Carousel';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -43,6 +44,7 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
 
       <Router>
 
