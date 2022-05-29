@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import Items from "./Items";
 import { CartContext } from "./Cart";
+import { ONavbar } from "./ONavbar/Navbar";
 
 const ContextCart = () => {
   const { item, clearCart, totalItem, totalAmount } = useContext(CartContext);
@@ -9,6 +10,7 @@ const ContextCart = () => {
   if (item.length === 0) {
     return (
       <>
+        <ONavbar />
         <section className="main-cart-section">
           <h1>Shopping Cart</h1>
           <p className="total-items">
@@ -22,6 +24,7 @@ const ContextCart = () => {
 
   return (
     <>
+      <ONavbar />
       <section className="main-cart-section">
         <h1>shopping Cart</h1>
         <p className="total-items">

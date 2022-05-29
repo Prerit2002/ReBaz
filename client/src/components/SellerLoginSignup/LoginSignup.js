@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import firstpic from "../../assets/LogIn.svg";
-import Logo from "../../assets/MainLogo.svg";
+import Logo from "../../assets/logob.svg";
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
