@@ -41,35 +41,41 @@ export const Trendings = () => {
                         </div>
                     </div>
                 </Link> */}
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
-                    <div class="px-6 py-4">
-                        <img src={Image1} alt='img' className='float-center' />
-                        <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
-                        <div class="font-bold text-lg mb-2 text-left text-blue-700">R.K. Puram Supermarket</div>
-                        <p class="text-orange-600 text-2xl mt-2 text-left font-bold">
-                            Rs.25000
-                        </p>
-                    </div>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
+                    <Link to='/Product'>
+                        <div class="px-6 py-4">
+                            <img src={Image1} alt='img' className='float-center' />
+                            <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
+                            <div class="font-bold text-lg mb-2 text-left text-blue-700">R.K. Puram Supermarket</div>
+                            <p class="text-orange-600 text-2xl mt-2 text-left font-bold">
+                                Rs.25000
+                            </p>
+                        </div>
+                    </Link>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
-                    <div class="px-6 py-4">
-                        <img src={Image2} alt='img' className='float-center' />
-                        <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
-                        <div class="font-bold text-lg mb-2 text-left text-blue-700">R.K. Puram Supermarket</div>
-                        <p class="text-orange-600 text-2xl mt-2 text-left font-bold">
-                            Rs.25000
-                        </p>
-                    </div>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
+                    <Link to='/Product'>
+                        <div class="px-6 py-4">
+                            <img src={Image2} alt='img' className='float-center' />
+                            <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
+                            <div class="font-bold text-lg mb-2 text-left text-blue-700">R.K. Puram Supermarket</div>
+                            <p class="text-orange-600 text-2xl mt-2 text-left font-bold">
+                                Rs.25000
+                            </p>
+                        </div>
+                    </Link>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
-                    <div class="px-6 py-4">
-                        <img src={Image3} alt='img' className='float-center' />
-                        <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
-                        <div class="font-bold text-lg mb-2 text-left text-blue-700">R.K. Puram Supermarket</div>
-                        <p class="text-orange-600 text-2xl mt-2 text-left font-bold">
-                            Rs.25000
-                        </p>
-                    </div>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
+                    <Link to='/Product'>
+                        <div class="px-6 py-4">
+                            <img src={Image3} alt='img' className='float-center' />
+                            <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
+                            <div class="font-bold text-lg mb-2 text-left text-blue-700">R.K. Puram Supermarket</div>
+                            <p class="text-orange-600 text-2xl mt-2 text-left font-bold">
+                                Rs.25000
+                            </p>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </>

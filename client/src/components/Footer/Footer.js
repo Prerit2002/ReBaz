@@ -1,12 +1,13 @@
 import React from 'react';
+import LogoB from "../../assets/logob.svg";
 
 export const Footer = () => {
     return (
         <footer>
-            <div className=" container flex flex-col flex-wrap lg:px-4 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+            <div className=" container flex flex-col flex-wrap lg:px-4 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap bg-white">
                 <div className="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left mt-12">
                     <div className='flex'>
-                        {/* <img src={Logo} alt='img' className='w-60' /> */}
+                        <img src={LogoB} alt='img' className='w-60 ml-5' />
                     </div>
                     <div class="flex justify-center mt-4 lg:mt-7">
                         <a href='/dashboard'>
@@ -132,9 +133,9 @@ export const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center bg-white">
                 <p className="text-violet-600 hover:text-violet-800">
-                    All rights reserved by @ HireMe 2022
+                    All rights reserved by @ ReBazz 2022
                 </p>
             </div>
         </footer>

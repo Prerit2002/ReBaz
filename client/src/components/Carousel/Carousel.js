@@ -35,8 +35,6 @@ const Carousel = () => {
         >
             <OverlayContainer>
                 <Wrapper>
-                    <Title>Basic Slider</Title>
-                    <Subtitle>Slides' background attachment set to fixed</Subtitle>
                 </Wrapper>
             </OverlayContainer>
 

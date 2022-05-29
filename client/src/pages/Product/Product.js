@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Image from "../../assets/joker.svg";
+import { Link } from 'react-router-dom';
 
 export const Product = () => {
     return (
         <>
             <div class="grid grid-cols-3 gap-2">
                 <div class="">
-                    <img src={Image} alt='img' className='mt-14 ml-16' />
+                    <img src={Image} alt='img' className='h-72 mt-14 ml-16' />
                 </div>
                 <div class="col-span-2 text-left">
                     <p className='text-blue-800 font-extrabold text-4xl mt-14 mb-3'>Bald Black Man</p>
@@ -19,19 +20,21 @@ export const Product = () => {
                             </button>
                         </div>
                         <div class="">
-                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-20 rounded">
-                                Add to Cart
-                            </button>
+                            <Link to='/cart'>
+                                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-20 rounded">
+                                    Add to Cart
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='bg-indigo-50 pt-1 mb-20 mt-28 pb-32'>
+            <div className='pt-1 mb-20 mt-14 pb-20'>
                 <h2 className='text-6xl font-semibold ml-10 text-left text-blue-700 mt-16 mb-20'>Explore More</h2>
                 <div className='overflow-x-auto mt-20'>
                     <div className='flex flex-row'>
-                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16">
+                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16 border border-blue-700 mb-10">
                             <div class="px-6 py-4">
                                 <img src={Image} alt='img' className='float-center' />
                                 <div class="font-extrabold text-lg mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -41,7 +44,7 @@ export const Product = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16">
+                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16 border border-blue-700 mb-10">
                             <div class="px-6 py-4">
                                 <img src={Image} alt='img' className='float-center' />
                                 <div class="font-extrabold text-lg mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -51,7 +54,7 @@ export const Product = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16">
+                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16 border border-blue-700 mb-10">
                             <div class="px-6 py-4">
                                 <img src={Image} alt='img' className='float-center' />
                                 <div class="font-extrabold text-lg mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -61,7 +64,7 @@ export const Product = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16">
+                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16 border border-blue-700 mb-10">
                             <div class="px-6 py-4">
                                 <img src={Image} alt='img' className='float-center' />
                                 <div class="font-extrabold text-lg mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -71,7 +74,7 @@ export const Product = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16">
+                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16 border border-blue-700 mb-10">
                             <div class="px-6 py-4">
                                 <img src={Image} alt='img' className='float-center' />
                                 <div class="font-extrabold text-lg mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -81,7 +84,7 @@ export const Product = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16">
+                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16 border border-blue-700 mb-10">
                             <div class="px-6 py-4">
                                 <img src={Image} alt='img' className='float-center' />
                                 <div class="font-extrabold text-lg mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -91,7 +94,7 @@ export const Product = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16">
+                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16 border border-blue-700 mb-10">
                             <div class="px-6 py-4">
                                 <img src={Image} alt='img' className='float-center' />
                                 <div class="font-extrabold text-lg mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -101,7 +104,7 @@ export const Product = () => {
                                 </p>
                             </div>
                         </div>
-                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16">
+                        <div className="w-36 h-66 rounded-xl shadow-lg bg-white ml-16 border border-blue-700 mb-10">
                             <div class="px-6 py-4">
                                 <img src={Image} alt='img' className='float-center' />
                                 <div class="font-extrabold text-lg mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>

@@ -9,8 +9,8 @@ export const WhyUse = () => {
             <div className="text-left">
                 <h2 className='text-6xl font-bold text-blue-700 ml-8 mt-20'>Why Use ReBazz</h2>
             </div>
-            <div className='grid lg:grid-cols-3 gap-4 lg:ml-6'>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+            <div className='grid lg:grid-cols-3 gap-4 lg:ml-6 mb-14'>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
                     <div class="px-6 py-4">
                         <img src={Image2} alt='img' className='float-center ml-20' />
                         <div class="font-bold text-3xl mt-4 text-center text-blue-700">Fast Delivery</div>
@@ -19,7 +19,7 @@ export const WhyUse = () => {
                         </p>
                     </div>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
                     <div class="px-6 py-4">
                         <img src={Image3} alt='img' className='float-center ml-20' />
                         <div class="font-bold text-3xl mt-4 text-center text-blue-700">Huge Discount</div>
@@ -28,7 +28,7 @@ export const WhyUse = () => {
                         </p>
                     </div>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
                     <div class="px-6 py-4">
                         <img src={Image1} alt='img' className='float-center ml-20' />
                         <div class="font-bold text-3xl mt-4 text-center text-blue-700">Great Rewards</div>

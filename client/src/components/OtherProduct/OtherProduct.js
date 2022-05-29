@@ -21,7 +21,7 @@ export const OtherProduct = () => {
                 </div>
             </div>
         </Link> */}
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
                     <div class="px-6 py-4">
                         <img src={Image1} alt='img' className='float-center' />
                         <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -31,7 +31,7 @@ export const OtherProduct = () => {
                         </p>
                     </div>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
                     <div class="px-6 py-4">
                         <img src={Image2} alt='img' className='float-center' />
                         <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -41,7 +41,7 @@ export const OtherProduct = () => {
                         </p>
                     </div>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
                     <div class="px-6 py-4">
                         <img src={Image3} alt='img' className='float-center' />
                         <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -51,7 +51,7 @@ export const OtherProduct = () => {
                         </p>
                     </div>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
                     <div class="px-6 py-4">
                         <img src={Image3} alt='img' className='float-center' />
                         <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -61,7 +61,7 @@ export const OtherProduct = () => {
                         </p>
                     </div>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
                     <div class="px-6 py-4">
                         <img src={Image1} alt='img' className='float-center' />
                         <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>
@@ -71,7 +71,7 @@ export const OtherProduct = () => {
                         </p>
                     </div>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
                     <div class="px-6 py-4">
                         <img src={Image2} alt='img' className='float-center' />
                         <div class="font-bold text-xl mt-4 text-left text-blue-700">Godrej Cupboard 7 feet tall</div>

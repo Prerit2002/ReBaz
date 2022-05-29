@@ -12,10 +12,12 @@ import { Category } from './components/Category/Category';
 import { OtherProduct } from './components/OtherProduct/OtherProduct';
 import { Footer } from './components/Footer/Footer';
 import { Navbar } from './components/Navbar/Navbar';
+import { ONavbar } from './components/ONavbar/Navbar';
 import { Dropdown } from './components/Navbar/Dropdown';
 import { ProfileDropdown } from './components/Navbar/ProfileDropdown';
 import { JobsThird } from './pages/Jobs/JobsThird';
 import { Product } from './pages/Product/Product';
+import { AboutUs } from './pages/About/AboutUs/AboutUs';
 import Cart from "./components/Cart";
 import Carousel from './components/Carousel/Carousel';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -68,13 +70,15 @@ function App() {
 
           <Route exact path="/ssignuplogin" element={<SSignupLogin />} />
 
-          <Route exact path="/" element={<Dashboard />} />
+          <Route exact path="/" element={<MDashboard />} />
 
           <Route exact path="/dashboard" element={<Dashboard />} />
 
           <Route exact path="/Jobs" element={<Job />} />
 
           <Route exact path="/Product" element={<Produc />} />
+
+          <Route exact path="/AboutUs" element={<Us />} />
 
         </Routes>
 
@@ -83,7 +87,7 @@ function App() {
     </div>
   );
 
-  function Dashboard() {
+  function MDashboard() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -125,6 +129,77 @@ function App() {
     );
   }
 
+  function Dashboard() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => {
+      setIsOpen(!isOpen);
+    };
+
+    useEffect(() => {
+      const hideMenu = () => {
+        if (window.innerWidth > 768 && isOpen) {
+          setIsOpen(false);
+          // console.log('ABC');
+        }
+      };
+
+      window.addEventListener('resize', hideMenu);
+
+      return () => {
+        window.removeEventListener('resize', hideMenu);
+      };
+    });
+
+    const [isOpens, setIsOpens] = useState(false);
+
+    const toggles = () => {
+      setIsOpens(!isOpens);
+    };
+    return (
+      <>
+        <ONavbar toggle={toggle} toggles={toggles} />
+        <Dropdown isOpen={isOpen} toggle={toggle} />
+        <ProfileDropdown isOpens={isOpens} toggle={toggles} />
+        <Carousel />
+        <Trendings />
+        <Category />
+        <OtherProduct />
+        <WhyUse />
+        <Footer />
+      </>
+    );
+  }
+
+  function Us() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    // const toggle = () => {
+    //   setIsOpen(!isOpen);
+    // };
+
+    useEffect(() => {
+      const hideMenu = () => {
+        if (window.innerWidth > 768 && isOpen) {
+          setIsOpen(false);
+          // console.log('ABC');
+        }
+      };
+
+      window.addEventListener('resize', hideMenu);
+
+      return () => {
+        window.removeEventListener('resize', hideMenu);
+      };
+    });
+    return (
+      <>
+        <AboutUs />
+        <Footer />
+      </>
+    );
+  }
+
   function Job() {
     return (
       <>
@@ -137,6 +212,7 @@ function App() {
   function Produc() {
     return (
       <>
+        <ONavbar />
         <Product />
         <Footer />
       </>

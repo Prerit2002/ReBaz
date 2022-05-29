@@ -33,59 +33,71 @@ export const Category = () => {
                 <h2 className='text-6xl font-bold text-blue-700 mt-20'>Category</h2>
             </div>
             <div className='grid lg:grid-cols-3 gap-4 lg:ml-6'>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
-                    <div class="px-6 py-4">
-                        <img src={Visually} alt='img' className='float-center ml-28' />
-                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Grocery</div>
-                        <p class="text-gray-700 text-base text-center font-semibold">
-                            2345 Products Available
-                        </p>
-                    </div>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
+                    <Link to='/Jobs'>
+                        <div class="px-6 py-4">
+                            <img src={Visually} alt='img' className='float-center ml-28' />
+                            <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Grocery</div>
+                            <p class="text-gray-700 text-base text-center font-semibold">
+                                2345 Products Available
+                            </p>
+                        </div>
+                    </Link>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
-                    <div class="px-6 py-4">
-                        <img src={Hearing} alt='img' className='float-center ml-28' />
-                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Electronics</div>
-                        <p class="text-gray-700 text-base text-center font-semibold">
-                            2345 Products Available
-                        </p>
-                    </div>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
+                    <Link to='/Jobs'>
+                        <div class="px-6 py-4">
+                            <img src={Hearing} alt='img' className='float-center ml-28' />
+                            <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Electronics</div>
+                            <p class="text-gray-700 text-base text-center font-semibold">
+                                2345 Products Available
+                            </p>
+                        </div>
+                    </Link>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
-                    <div class="px-6 py-4">
-                        <img src={WheelChair} alt='img' className='float-center ml-28' />
-                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Medicines</div>
-                        <p class="text-gray-700 text-base text-center font-semibold">
-                            2345 Products Available
-                        </p>
-                    </div>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
+                    <Link to='/Jobs'>
+                        <div class="px-6 py-4">
+                            <img src={WheelChair} alt='img' className='float-center ml-28' />
+                            <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Medicines</div>
+                            <p class="text-gray-700 text-base text-center font-semibold">
+                                2345 Products Available
+                            </p>
+                        </div>
+                    </Link>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
-                    <div class="px-6 py-4">
-                        <img src={Autism} alt='img' className='float-center ml-28' />
-                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Stationary</div>
-                        <p class="text-gray-700 text-base text-center font-semibold">
-                            2345 Products Available
-                        </p>
-                    </div>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
+                    <Link to='/Jobs'>
+                        <div class="px-6 py-4">
+                            <img src={Autism} alt='img' className='float-center ml-28' />
+                            <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Stationary</div>
+                            <p class="text-gray-700 text-base text-center font-semibold">
+                                2345 Products Available
+                            </p>
+                        </div>
+                    </Link>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
-                    <div class="px-6 py-4">
-                        <img src={Deaf} alt='img' className='float-center ml-28' />
-                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Gift and Toys</div>
-                        <p class="text-gray-700 text-base text-center font-semibold">
-                            2345 Products Available
-                        </p>
-                    </div>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
+                    <Link to='/Jobs'>
+                        <div class="px-6 py-4">
+                            <img src={Deaf} alt='img' className='float-center ml-28' />
+                            <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Gift and Toys</div>
+                            <p class="text-gray-700 text-base text-center font-semibold">
+                                2345 Products Available
+                            </p>
+                        </div>
+                    </Link>
                 </div>
-                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8">
-                    <div class="px-6 py-4">
-                        <img src={Disabled} alt='img' className='float-center ml-28' />
-                        <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Local Artifacts</div>
-                        <p class="text-gray-700 text-base text-center font-semibold">
-                            2345 Products Available
-                        </p>
-                    </div>
+                <div class="max-w-sm rounded-2xl overflow-hidden border-indigo-700 border-2 mt-8 bg-white">
+                    <Link to='/Jobs'>
+                        <div class="px-6 py-4">
+                            <img src={Disabled} alt='img' className='float-center ml-28' />
+                            <div class="font-bold text-3xl mb-2 mt-4 text-center text-orange-600">Local Artifacts</div>
+                            <p class="text-gray-700 text-base text-center font-semibold">
+                                2345 Products Available
+                            </p>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </>
